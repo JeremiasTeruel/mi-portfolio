@@ -1,0 +1,42 @@
+header {
+    height: 100vh;
+    padding-top: 7rem;
+    overflow: hidden;
+}
+
+.header_container {
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+/* --------------------CTA-------------------*/
+
+.cta {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+/* --------------------SOCIALS-------------------*/
+
+.header_socials {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+/* --------------------ME-------------------*/
+
+.me {
+    width: 22rem;
+    height: 100%;
+    position: absolute;
+    left: calc(50% - 11rem);
+    margin-top: 4rem;
+    border-radius: 12rem;
+    overflow: hidden;
+}
