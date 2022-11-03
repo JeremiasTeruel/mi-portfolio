@@ -7,16 +7,20 @@ import HeaderSocials from './HeaderSocials'
 const Header = () => {
     return (
         <header>
-            <div className="container header_container">
-                <h5>Hola, soy</h5>
-                <h1>Jeremias Teruel</h1>
-                <h5 className="text-light">Full Stack Developer</h5>
-                <CTA />
-                <HeaderSocials/>
-
-                <div className="me">
-                    <img src={ME} alt='yo'/>
+            <div className="header_container">
+                <div className='imagen-nombre'>
+                    <HeaderSocials/>
+                    <div>
+                        <h5>Hola, soy</h5>
+                        <h1>Jeremias Teruel</h1>
+                        <h5 className="text-light">Full Stack Developer</h5>
+                    </div>
+                    <div className="me">
+                        <img src={ME} alt='yo' className='yo'/>
+                    </div>
                 </div>
+                <CTA />
+
             </div>
         </header>
     )

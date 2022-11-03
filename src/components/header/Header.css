@@ -5,11 +5,21 @@ header {
 }
 
 .header_container {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100%;
-    position: relative;
 }
 
+.imagen-nombre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 15rem;
+    width: 100vw;
+}
 /* --------------------CTA-------------------*/
 
 .cta {
@@ -24,19 +34,48 @@ header {
 .header_socials {
     display: flex;
     align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
     gap: .8rem;
-    justify-content: center;
     font-size: 2rem;
 }
 
 /* --------------------ME-------------------*/
 
 .me {
-    width: 22rem;
+    height: 20rem;
+}
+
+.me h1{
+    margin-top: 2rem;
+}
+
+.yo{
+    width: 15.2rem;
     height: 100%;
-    position: absolute;
-    left: calc(50% - 11rem);
-    margin-top: 4rem;
-    border-radius: 12rem;
-    overflow: hidden;
+    object-fit: contain;
+    border-radius: 9999rem;
+    margin: 0;
+}
+
+/* ------------------------ MEDIA QUERIES (TABLET) --------------------*/
+
+
+@media screen and (max-width: 1024px) {
+    header {
+        height: 68vh;
+    }
+}
+
+/* ------------------------ MEDIA QUERIES (PHONE) --------------------*/
+
+
+@media screen and (max-width: 600px) {
+    header {
+        height: 100vh;
+    }
+
+    .header_socials{
+        display: none;
+    }
 }
