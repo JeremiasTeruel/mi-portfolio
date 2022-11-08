@@ -61,6 +61,20 @@
     color: var(--color-light);
 }
 
+.insignia{
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.insignia_img{
+    height: 60%;
+    object-fit: contain;
+}
+
+
 /* ------------------ MEDIA QUERIES(LAPTOP)------------*/
 
 @media screen and (max-width: 1024px){
@@ -98,5 +112,16 @@
 
     .about_content p{
         margin: 1.5rem 0;
+    }
+
+    .insignia{
+        flex-direction: column;
+        gap: 0;
+        margin-bottom: 7rem;
+    }
+
+    .insignia p{
+        font-size: 1rem;
+        margin-top: 12rem;
     }
 }
