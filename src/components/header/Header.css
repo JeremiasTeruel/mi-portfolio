@@ -65,6 +65,13 @@ header {
     header {
         height: 68vh;
     }
+
+    .imagen-nombre{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    }
 }
 
 /* ------------------------ MEDIA QUERIES (PHONE) --------------------*/
@@ -77,5 +84,9 @@ header {
 
     .header_socials{
         display: none;
+    }
+
+    .imagen-nombre{
+        flex-direction: column;
     }
 }
