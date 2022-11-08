@@ -29,7 +29,8 @@ const data = [
         id: 4,
         image: SPT,
         tittle: 'Sportacus',
-        github: 'https://github.com/diego-nahuel/sportacus'
+        github: 'https://github.com/diego-nahuel/sportacus',
+        page: 'https://sportacus-host.vercel.app'
     },
     {
         id: 5,
@@ -47,7 +48,7 @@ const Portfolio = () => {
 
             <div className='container portfolio_container'>
                 {
-                    data.map(({id,image, tittle, github}) => {
+                    data.map(({id,image, tittle, github, page}) => {
                         return(
                             <article key={id} className='portfolio_item'>
                                 <h3>{tittle}</h3>
@@ -55,7 +56,10 @@ const Portfolio = () => {
                                     <img src={image} alt={tittle} />
                                 </div>
                                 <div className='portfolio_item-cta'>
-                                    <a href={github} className='btn' target='_blank'>Ver en GitHub</a>
+                                    <a href={github} className='btn' target='_blank' rel='noreferrer'>Ver en GitHub</a>
+                                </div>
+                                <div className='portfolio_item-cta'>
+                                    <a href={page} className='btn' target='_blank' rel='noreferrer'>Ver Pagina</a>
                                 </div>
                             </article>
                         )
