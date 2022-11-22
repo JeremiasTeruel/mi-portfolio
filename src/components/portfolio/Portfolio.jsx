@@ -30,7 +30,6 @@ const data = [
         image: SPT,
         tittle: 'Sportacus',
         github: 'https://github.com/diego-nahuel/sportacus',
-        page: 'https://sportacus-host.vercel.app'
     },
     {
         id: 5,
@@ -57,9 +56,6 @@ const Portfolio = () => {
                                 </div>
                                 <div className='portfolio_item-cta'>
                                     <a href={github} className='btn' target='_blank' rel='noreferrer'>Ver en GitHub</a>
-                                </div>
-                                <div className='portfolio_item-cta'>
-                                    <a href={page} className='btn' target='_blank' rel='noreferrer'>Ver Pagina</a>
                                 </div>
                             </article>
                         )
